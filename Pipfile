@@ -5,11 +5,9 @@ name = "pypi"
 
 [packages]
 
-[dev-  packages]
+[dev-packages]
 black = "*"
-
-[requires]
-python_version = "3.9"
+flit = "*"
 
 [pipenv]
 allow_prereleases = true
