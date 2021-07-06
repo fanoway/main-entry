@@ -9,3 +9,7 @@ home-page = "https://github.com/fanoway/main-entry"
 classifiers = [ "License :: OSI Approved :: MIT License",]
 description-file = "README.md"
 requires-python=">=2.6"
+
+[tool.black]
+line-length = 79
+target-version = ['py36', 'py37', 'py38']

@@ -15,8 +15,8 @@
 [build-image]: https://github.com/fanoway/main-entry/actions/workflows/build.yml/badge.svg
 [build-url]: https://github.com/fanoway/main-entry/actions/workflows/build.yml
 [coverage-image]: https://codecov.io/gh/fanoway/main-entry/branch/main/graph/badge.svg
-[coverage-url]: https://codecov.io/gh/fanoway/main-entry
-[quality-image]: https://api.codeclimate.com/v1/badges/3130fa0ba3b7993fbf0a/maintainability
+[coverage-url]: https://codeclimate.com/github/fanoway/main-entry/maintainability
+[quality-image]: https://api.codeclimate.com/v1/badges/49aeb04337c28d1b1016/maintainabilit
 [quality-url]: https://codeclimate.com/github/fanoway/main-entry
 
 Simple wrapper to replace `if __name__ = "__main__":` with a nice clean `@entry` wrapper
