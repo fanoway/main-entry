@@ -1,1 +1,1 @@
-from .entrypoint import *
+from main-entry import *
