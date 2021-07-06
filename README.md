@@ -10,7 +10,7 @@ Simple wrapper to replace `if __name__ = "__main__":` with a nice clean `@entry`
 main-entry can be installed using pip and has no dependancies
 
 ```
-pip install main-entry
+pip install mainentry
 ```
 
 ## Usage
@@ -18,9 +18,16 @@ pip install main-entry
 ```python
 from mainentry import entry
 
+
 @entry
 def helloworld():
-  print('Hello World')
+    # Use this as your primary function
+    print("Hello World")
+
+
+# Call primary function
+helloworld()
+
 
 ```
 
