@@ -4,10 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+tox = "*"
 
 [dev-packages]
 black = "*"
 flit = "*"
+coverage = "*"
+flake8 = "*"
+mccabe = "*"
+mypy = "*"
+pylint = "*"
+pytest = "*"
+tox = "*"
 
 [pipenv]
 allow_prereleases = true

@@ -1,7 +1,7 @@
 """Wrapper to replace if __name__ == "__main__": with a more pythonic decorator"""
 
 
-__version__ = "0.1.5"
+__version__ = "1.00"
 
 import inspect
 
