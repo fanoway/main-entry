@@ -32,7 +32,15 @@ jobs:
 
           - name: Run tox
             run: |
-                python -m tox
+                python -m tox\
+
+          - name: Generate Report
+            run: |
+              pip install coverage
+              coverage run -m unittest
+          - name: Upload Coverage to Codecov
+            uses: codecov/codecov-action@v1
+            with:
 
           - name: "Upload coverage to Codecov"
             uses: codecov/codecov-action@v1
@@ -40,3 +48,5 @@ jobs:
             with:
               token: ${{ secrets.CODECOV_TOKEN }} 
               fail_ci_if_error: true
+
+
