@@ -36,8 +36,9 @@ jobs:
 
           - name: Upload coverage to Codecov
             steps:
-              - uses: actions/checkout@master
-              - uses: codecov/codecov-action@v1
+              uses: actions/checkout@master
+              uses: codecov/codecov-action@v1
                 with:
                   fail_ci_if_error: true
+                  env_vars: ${{ matrix.python-version }}
                   verbose: true
