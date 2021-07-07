@@ -15,6 +15,7 @@ mypy = "*"
 pylint = "*"
 pytest = "*"
 tox = "*"
+pytest-cov = "*"
 
 [pipenv]
 allow_prereleases = true
