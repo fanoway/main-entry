@@ -114,4 +114,4 @@ dmypy.json
 .pyre/
 
 # Pipenv
-.lock
+*.lock
