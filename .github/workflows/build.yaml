@@ -38,4 +38,6 @@ jobs:
             uses: codecov/codecov-action@v1
             with:
               token: ${{ secrets.CODECOV_TOKEN }} 
-              fail_ci_if_error: true
+              if: contains(env.USING_COVERAGE, matrix.python-version)
+              with:
+                  fail_ci_if_error: true
