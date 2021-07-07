@@ -32,11 +32,7 @@ jobs:
 
           - name: Run tox
             run: |
-                python -m tox\
-
-          - name: Generate Report
-            run: |
-              coverage run mainentry.py
+                python -m tox
 
           - name: "Upload coverage to Codecov"
             uses: codecov/codecov-action@v1
