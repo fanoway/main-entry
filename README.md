@@ -6,7 +6,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyPI Version][pypi-image]][pypi-url]
-[![Build & Test](https://github.com/fanoway/main-entry/actions/workflows/build.yaml/badge.svg)](https://github.com/fanoway/main-entry/actions/workflows/build.yaml)
+[![build](https://github.com/fanoway/main-entry/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/fanoway/main-entry/actions/workflows/build.yaml)
 [![Code Coverage][coverage-image]][coverage-url]
 [![Maintainability](https://api.codeclimate.com/v1/badges/49aeb04337c28d1b1016/maintainability)](https://codeclimate.com/github/fanoway/main-entry/maintainability)
 
