@@ -39,6 +39,6 @@ jobs:
             with:
               files: coverage.xml
               fail_ci_if_error: true
-              
+              directory: .
               env_vars: ${{ matrix.python-version }}
               path_to_write_report: pytest --cov=./ --cov-report=xml
