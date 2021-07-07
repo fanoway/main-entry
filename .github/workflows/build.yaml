@@ -37,7 +37,8 @@ jobs:
           - name: Upload coverage to Codecov
             uses: codecov/codecov-action@v1
             with:
-              files: .coverage.xml
+              files: coverage.xml
               fail_ci_if_error: true
+              
               env_vars: ${{ matrix.python-version }}
               path_to_write_report: pytest --cov=./ --cov-report=xml
