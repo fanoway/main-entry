@@ -1,1 +1,1 @@
-from mainentry import *
+from .mainentry import *
