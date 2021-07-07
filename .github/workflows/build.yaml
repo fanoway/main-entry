@@ -36,13 +36,8 @@ jobs:
 
           - name: Generate Report
             run: |
-              pip install coverage
-              coverage run -m unittest
-          - name: Upload Coverage to Codecov
-            uses: codecov/codecov-action@v1
-            with:
-              fail_ci_if_error: true
-              
+              coverage run -m pytest
+
           - name: "Upload coverage to Codecov"
             uses: codecov/codecov-action@v1
             if: contains(env.USING_COVERAGE, matrix.python-version)
