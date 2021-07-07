@@ -39,5 +39,4 @@ jobs:
             with:
               fail_ci_if_error: true
               env_vars: ${{ matrix.python-version }}
-              verbose: true
               path_to_write_report: ./coverage/codecov_report.txt
