@@ -1,19 +1,11 @@
-name: Build & Test
+name: build
 
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  # Also trigger on page_build, as well as release created events
-  page_build:
-  release:
-    types: # This configuration does not affect the page_build event above
-      - created
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+    workflow_dispatch:
 
 jobs: 
     build:
@@ -43,7 +35,9 @@ jobs:
                 python -m tox
 
           - name: Upload coverage to Codecov
-            uses: codecov/codecov-action@v1
-            if: contains(env.USING_COVERAGE, matrix.python-version)
-            with:
-                fail_ci_if_error: true
+            steps:
+              - uses: actions/checkout@master
+              - uses: codecov/codecov-action@v1
+                with:
+                  fail_ci_if_error: true
+                  verbose: true
