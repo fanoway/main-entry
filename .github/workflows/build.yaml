@@ -36,7 +36,7 @@ jobs:
 
           - name: Generate Report
             run: |
-              coverage run mainentry.py
+              coverage run -m mainentry
 
           - name: "Upload coverage to Codecov"
             uses: codecov/codecov-action@v1
