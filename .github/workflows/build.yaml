@@ -36,7 +36,7 @@ jobs:
 
           - name: Generate Report
             run: |
-              coverage run -m mainentry.mainentry
+              coverage run -m src.mainentry.mainentry
 
           - name: "Upload coverage to Codecov"
             uses: codecov/codecov-action@v1
