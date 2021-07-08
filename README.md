@@ -7,13 +7,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyPI Version][pypi-image]][pypi-url]
 [![build](https://github.com/fanoway/main-entry/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/fanoway/main-entry/actions/workflows/build.yaml)
-[![Code Coverage][coverage-image]][coverage-url]
+[![codecov](https://codecov.io/gh/fanoway/main-entry/branch/main/graph/badge.svg?token=D3X4DZVA63)](https://codecov.io/gh/fanoway/main-entry)
 [![Maintainability](https://api.codeclimate.com/v1/badges/49aeb04337c28d1b1016/maintainability)](https://codeclimate.com/github/fanoway/main-entry/maintainability)
 
 [pypi-image]: https://img.shields.io/pypi/v/podsearch
 [pypi-url]: https://pypi.org/project/mainentry/
-[coverage-image]: https://codecov.io/gh/fanoway/main-entry/branch/main/graph/badge.svg
-[coverage-url]: https://codeclimate.com/github/fanoway/main-entry/maintainability
+
 
 
 Simple wrapper to replace `if __name__ = "__main__":` with a nice clean `@entry` wrapper
