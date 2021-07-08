@@ -1,12 +1,10 @@
-"""Wrapper to replace if __name__ == "__main__": with a decorator"""
-
-
-__version__ = "1.3"
+""" substitute for if __name__ == "__main__": """
 
 import inspect
-from typing import Any, TypeVar, Callable
+from typing import Any, TypeVar, Callable, cast
 
-F = TypeVar('F', bound=Callable[..., Any])
+F = TypeVar("F", bound=Callable[..., Any])  # pylint: disable = invalid-name
+
 
 def entry(func: F) -> F:
     """decorator"""
@@ -16,4 +14,4 @@ def entry(func: F) -> F:
         if inspect.stack()[1].frame.f_locals.get("__name__") == "__main__":
             func()
 
-    return wrapper
+    return cast(F, wrapper)
