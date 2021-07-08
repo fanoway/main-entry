@@ -4,9 +4,11 @@
 __version__ = "1.1"
 
 import inspect
+from typing import Any, TypeVar, Callable
 
+F = TypeVar('F', bound=Callable[..., Any])
 
-def entry(func):
+def entry(func: F) -> F:
     """decorator"""
 
     def wrapper():
