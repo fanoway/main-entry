@@ -1,7 +1,7 @@
 """Wrapper to replace if __name__ == "__main__": with a decorator"""
 
 
-__version__ = "1.1"
+__version__ = "1.1.1"
 
 import inspect
 from typing import Any, TypeVar, Callable
