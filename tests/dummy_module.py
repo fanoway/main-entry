@@ -1,4 +1,4 @@
-from mainentry import entry
+from src.mainentry import entry
 
 
 @entry
