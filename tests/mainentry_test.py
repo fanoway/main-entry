@@ -2,7 +2,7 @@ import os
 import runpy
 import sys
 
-from mainentry import entry
+from src.mainentry import entry
 
 # add dummy module to sys.path
 sys.path.append("./tests")
